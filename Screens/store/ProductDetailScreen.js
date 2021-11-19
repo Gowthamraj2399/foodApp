@@ -44,7 +44,7 @@ const ProductDetailScreen = ({route, navigation}) => {
             <View style={styles.overview}>
               <View>
                 <Text style={styles.title}>{selectedProduct.title}</Text>
-                <Text>
+                <Text style={styles.primaryText}>
                   By{': '}
                   <Text style={styles.subTitle}>
                     {selectedProduct.createdBy}
@@ -65,7 +65,7 @@ const ProductDetailScreen = ({route, navigation}) => {
               <TouchableOpacity
                 style={{...styles.button, ...styles.primaryCart}}
                 onPress={addToCart}>
-                <Text> Add To Bag </Text>
+                <Text style={styles.primaryText}> Add To Bag </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={{...styles.button, ...styles.secondaryCart}}>
@@ -117,10 +117,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: '700',
+    color: Colors.primary_text,
   },
   subTitle: {
     fontSize: 14,
     fontWeight: '700',
+    color: Colors.grey_text,
   },
   price: {
     fontSize: 18,
@@ -151,7 +153,11 @@ const styles = StyleSheet.create({
   secondaryCart: {
     width: 50,
   },
-  secondaryButtonText: {fontWeight: '200', fontSize: 24},
+  secondaryButtonText: {
+    fontWeight: '400',
+    fontSize: 24,
+    color: Colors.primary_text,
+  },
   productDetails: {
     margin: 10,
   },
@@ -164,9 +170,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '700',
     marginBottom: 10,
+    color: Colors.primary_text,
   },
   productDescription: {
     fontSize: 16,
+    color: Colors.primary_text,
+  },
+  primaryText: {
+    color: Colors.primary_text,
   },
 });
 

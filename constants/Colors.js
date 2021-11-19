@@ -7,4 +7,5 @@ export default {
   white_backgroud: 'white',
   borderColor: '#dddddd',
   sub_text: '#424242',
+  grey_text: '#808080',
 };

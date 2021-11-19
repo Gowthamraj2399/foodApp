@@ -15,7 +15,7 @@ const ProductItem = props => {
 
           <View style={styles.itemOverviewLarge}>
             <View style={styles.overview}>
-              <Text>{props.title}</Text>
+              <Text style={styles.primaryText}>{props.title}</Text>
             </View>
             <View style={styles.overview}>
               <Rating
@@ -24,7 +24,7 @@ const ProductItem = props => {
                 imageSize={10}
                 style={styles.rating}
               />
-              <Text>$ {props.price}</Text>
+              <Text style={styles.primaryText}>$ {props.price}</Text>
             </View>
           </View>
         </View>
@@ -65,6 +65,9 @@ const styles = StyleSheet.create({
   },
   rating: {
     marginTop: 5,
+  },
+  primaryText: {
+    color: Colors.primary_text,
   },
 });
 

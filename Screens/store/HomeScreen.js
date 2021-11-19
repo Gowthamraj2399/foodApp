@@ -95,7 +95,7 @@ const HomeScreen = ({route, navigation}) => {
 
                     <View style={styles.itemOverview}>
                       <View style={styles.overview}>
-                        <Text>{val.title}</Text>
+                        <Text style={styles.primaryText}>{val.title}</Text>
                       </View>
                       <View style={styles.overview}>
                         <Rating
@@ -104,7 +104,7 @@ const HomeScreen = ({route, navigation}) => {
                           imageSize={10}
                           style={styles.rating}
                         />
-                        <Text>$ {val.price}</Text>
+                        <Text style={styles.primaryText}>$ {val.price}</Text>
                       </View>
                     </View>
                   </View>
@@ -158,20 +158,23 @@ const styles = StyleSheet.create({
   },
   searchBar: {
     height: 45,
-    marginTop: 20,
+    marginTop: 25,
     marginLeft: 20,
     borderBottomColor: '#FFFFFF',
     flex: 1,
+    color: Colors.grey_text,
   },
   searchBarIcon: {
     margin: 10,
     marginRight: 15,
+    color: Colors.primary_text,
   },
   headTitle: {
     fontStyle: 'italic',
     fontSize: 18,
     margin: 10,
     paddingLeft: 15,
+    color: Colors.primary_text,
   },
   horizontalScrollContainer: {
     height: 70,
@@ -213,6 +216,9 @@ const styles = StyleSheet.create({
   },
   rating: {
     marginTop: 5,
+  },
+  primaryText: {
+    color: Colors.primary_text,
   },
 });
 

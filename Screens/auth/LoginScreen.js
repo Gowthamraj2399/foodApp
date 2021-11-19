@@ -57,6 +57,7 @@ const LoginScreen = props => {
         <TextInput
           style={styles.inputs}
           placeholder="Email"
+          placeholderTextColor={Colors.grey_text}
           keyboardType="email-address"
           underlineColorAndroid="transparent"
           value={email}
@@ -74,6 +75,7 @@ const LoginScreen = props => {
           style={styles.inputs}
           placeholder="Password"
           secureTextEntry={true}
+          placeholderTextColor={Colors.grey_text}
           underlineColorAndroid="transparent"
           value={password}
           onChangeText={text => setPassword(text)}
@@ -128,11 +130,13 @@ const styles = StyleSheet.create({
   },
   placeholderIcon: {
     marginLeft: 20,
+    color: Colors.primary_text,
   },
   inputs: {
     height: 45,
     marginLeft: 16,
     borderBottomColor: '#FFFFFF',
+    color: Colors.primary_text,
     flex: 1,
   },
   icon: {

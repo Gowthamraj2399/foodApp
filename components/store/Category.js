@@ -2,6 +2,7 @@
 // eslint-disable-next-line prettier/prettier
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import Colors from '../../constants/Colors';
 
 const Category = props => {
   return (
@@ -11,7 +12,7 @@ const Category = props => {
           <Image source={{uri: props.imageUrl}} style={styles.image} />
         </View>
         <View style={styles.titleContainer}>
-          <Text>{props.name}</Text>
+          <Text style={styles.primaryText}>{props.name}</Text>
         </View>
       </View>
     </TouchableOpacity>
@@ -39,6 +40,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'white',
+  },
+  primaryText: {
+    color: Colors.primary_text,
   },
 });
 

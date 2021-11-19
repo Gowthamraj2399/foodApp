@@ -19,7 +19,7 @@ const CartScreen = ({navigation}) => {
           onPress={() => {
             navigation.navigate('Home');
           }}>
-          <Text>Add Item</Text>
+          <Text style={styles.primaryText}>Add Item</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -62,6 +62,10 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: '700',
     padding: 20,
+    color: Colors.primary_text,
+  },
+  primaryText: {
+    color: Colors.primary_text,
   },
 });
 

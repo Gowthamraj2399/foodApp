@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  categoryTitle: {fontSize: 18},
+  categoryTitle: {fontSize: 18, color: Colors.primary_text},
   categoryLink: {
     color: Colors.primary,
     borderBottomWidth: 1,

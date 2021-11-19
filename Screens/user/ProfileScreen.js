@@ -111,6 +111,7 @@ const ProfileScreen = props => {
                   setName(text);
                 }}
                 value={name}
+                placeholderTextColor={Colors.grey_text}
               />
             </View>
             <View style={styles.formGroup}>
@@ -122,6 +123,7 @@ const ProfileScreen = props => {
                 }}
                 value={email}
                 keyboardType="email-address"
+                placeholderTextColor={Colors.grey_text}
               />
             </View>
             <View style={styles.formGroup}>
@@ -133,6 +135,7 @@ const ProfileScreen = props => {
                 }}
                 value={password}
                 secureTextEntry={true}
+                placeholderTextColor={Colors.grey_text}
               />
             </View>
             <View style={styles.formGroup}>
@@ -143,6 +146,7 @@ const ProfileScreen = props => {
                   setUserId(text);
                 }}
                 value={userId}
+                placeholderTextColor={Colors.grey_text}
               />
             </View>
             <View style={styles.formGroup}>
@@ -153,6 +157,7 @@ const ProfileScreen = props => {
                   setZipCode(text);
                 }}
                 value={zipCode}
+                placeholderTextColor={Colors.grey_text}
                 keyboardType="number-pad"
               />
             </View>
@@ -196,6 +201,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textTransform: 'uppercase',
     fontWeight: 'bold',
+    color: Colors.grey_text,
   },
   body: {
     marginTop: 100,
@@ -214,6 +220,7 @@ const styles = StyleSheet.create({
   input: {
     borderBottomWidth: 1,
     borderBottomColor: Colors.borderColor,
+    color: Colors.primary_text,
   },
 });
 
